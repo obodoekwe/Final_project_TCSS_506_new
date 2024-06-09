@@ -12,18 +12,18 @@ app.secret_key = 'my_secret_key'
 
 
 # database configuration
-DBUSER = 'user'
-DBPASS = 'password'
-DBHOST = 'db'
-DBPORT = '5432'
-DBNAME = 'pglogindb'
+#DBUSER = 'user'
+#DBPASS = 'password'
+#DBHOST = 'db'
+#DBPORT = '5432'
+#DBNAME = 'pglogindb'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{db}'.format(
-        user=DBUSER,
-        passwd=DBPASS,
-        host=DBHOST,
-        port=DBPORT,
-        db=DBNAME)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{db}'.format(
+ #       user=DBUSER,
+  #      passwd=DBPASS,
+   #     host=DBHOST,
+    #    port=DBPORT,
+     #   db=DBNAME)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
